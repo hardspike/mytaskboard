@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Task Board</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+
+<body onload="startClock();loadTasks()">
+    <p id="theTime"></p>
+    <div id="headerContainer">
+        <h1>My Task Board</h1>
+    </div>
+    <div id="taskForm">
+        <form id="myForm">
+            <div id="taskInfo">
+                <label>Enter your task:</label>
+                <br>
+                <textarea type="text" id="taskInfoBox"></textarea>
+            </div>
+            <div id="dateDue">
+                <label>Completion date:</label>
+                <div class="form-group row">
+                    <div class="col-9">
+                        <input class="form-control" type="date" id="dateDueBox">
+                    </div>
+                </div>
+            </div>
+            <div id="timeDue">
+                <label>Completion time:</label>
+                <div class="form-group row">
+                    <div class="col-8">
+                        <input class="form-control" type="time" id="timeDueBox">
+                    </div>
+                </div>
+            </div>
+            <div id="buttons">
+                <button type="button" onclick="validateTask()" class="btn btn-success">Save Task</button>
+                <button type="reset" class="btn btn-primary">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="taskPages">
+
+    </div>
+    <br><br><br>
+<footer><span>©</span> All Right Reserved to Ishay Elimelech 2018 <span>©</span></footer>
+</body>
+
+</html>

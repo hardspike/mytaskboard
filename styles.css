@@ -1,0 +1,225 @@
+@font-face {
+    font-family: shooken;
+    src: url(assets/fonts/shooken/ShookenDemo.ttf);
+}
+
+body {
+    background-image: url(assets/images/bgImg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: shooken;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(-300px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+
+#headerContainer {
+    text-align: center;
+    margin-top: 75px;
+    font-size: 35px;
+    text-shadow: 3px 3px 2px white,
+    -3px -3px 2px white;
+    color: black;
+    animation: fadeInRight 1s;
+}
+h1 {
+    font-family: shooken;
+}
+@keyframes fadeInUp {
+    0% {
+       opacity: 0;
+       transform: translateY(200px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+#taskForm {
+    display: inline-block;
+    height: 250px;
+    width: 900px;
+    background-image: url(assets/images/notebook.jpg);
+    border: 1px solid black;
+    font-family: cursive;
+    animation: fadeInUp 1s;
+}
+#taskInfo > label {
+    text-decoration: underline;
+}
+
+#taskInfo {
+float: left;
+margin-left: 50px;
+margin-top: 11px;
+width: 500px;
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+border-right: 1px solid skyblue;
+}
+
+#taskInfoBox {
+    overflow:scroll;
+    overflow: hidden;
+    margin-top: 15px;
+    height: 175px;
+    width: 500px;
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+    line-height: 55px;
+}
+
+#dateDue {
+    float: right;
+    width: 250px;
+    margin-top: 30px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+#dateDueBox {
+    text-align: center;
+}
+#timeDue {
+    float: right;
+    width: 250px;
+    height:75px;
+    margin-top: 5px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+#timeDueBox {
+    text-align: center;
+}
+
+#buttons {
+    display: inline-block;
+    width:175px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#taskPages {
+    display: inline-block;
+    margin-top: 50px;
+    width: 1100px;
+    height: auto;
+    word-wrap: break-word;
+}
+
+@keyframes Fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.taskPage {
+    position: inline-block;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    height: 350px;
+    width: 250px;
+    background-image: url(assets/images/page.png);
+    background-size: cover;
+    float: left;
+    animation: Fade 1s;
+}
+
+.taskContent {
+    overflow-y: auto;
+    width: 210px;
+    height: 220px;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 23px;
+}
+
+.timeContent {
+    margin-left: 45px;
+    margin-top: 20px;
+    height: 70px;
+    width: 175px;
+    text-align: left;
+    font-family: cursive;
+    color: sandybrown;
+    text-shadow: 1px 1px 1px black,
+    -1px -1px 1px black;
+    font-weight: bold;
+    
+}
+
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(200px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+
+#theTime {
+    margin-left: 10px;
+    font-family: fantasy;
+    font-size:25px;
+    color:white;
+    text-shadow: 2px 2px 2px black,
+    -2px -2px 2px black;
+    animation: fadeInLeft 1s;
+}
+
+.delete {
+    float:left;
+    border-radius: 15px;
+    padding: 3;
+    background-color: white;
+    opacity: 0;
+}
+.delete > span {
+    margin-top: 3px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px black,
+    -1px -1px 1px black;
+    font-size: 16px;
+    animation: footerFade 2s;
+}
+footer > span {
+    font-family: fantasy;
+}
+
+@keyframes footerFade {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
